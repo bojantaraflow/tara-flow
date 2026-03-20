@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "next-intl";
 
-import { Link as IntlLink } from "@/i18n/navigation";
+import { Link as IntlLink, usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -18,6 +18,12 @@ export function Navbar({ labels }: { labels: Record<string, string> }) {
   const [scrolled, setScrolled] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const switchLocale = (newLocale: string) => {
+    router.push(pathname, { locale: newLocale as "bs" | "en" });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,19 +97,43 @@ export function Navbar({ labels }: { labels: Record<string, string> }) {
                 <span>{labels["nav.backToTop"]}</span>
               </button>
             )}
-            <div className="hidden gap-1 md:flex">
-              <IntlLink
-                href="/"
-                locale={locale === "bs" ? "en" : "bs"}
+            <div className="hidden items-center gap-1 md:flex">
+              <button
+                type="button"
+                onClick={() => switchLocale("bs")}
                 className={cn(
-                  "rounded px-2 py-1 text-sm font-bold tracking-wider transition-all duration-200 hover:scale-110 hover:text-[#0F4C75] cursor-pointer",
-                  scrolled
-                    ? "text-gray-600 hover:bg-gray-100 hover:text-[#0F4C75]"
-                    : "text-white/90 hover:bg-white/10 hover:text-white"
+                  "rounded px-2 py-1 text-sm font-bold tracking-wider transition-all duration-200 hover:scale-110 cursor-pointer",
+                  locale === "bs"
+                    ? "text-[#0F4C75]"
+                    : scrolled
+                      ? "text-gray-400 hover:text-[#0F4C75]"
+                      : "text-white/60 hover:text-white"
                 )}
               >
-                {locale === "bs" ? "EN" : "BS"}
-              </IntlLink>
+                BS
+              </button>
+              <span
+                className={cn(
+                  "text-gray-300",
+                  !scrolled && "text-white/40"
+                )}
+              >
+                |
+              </span>
+              <button
+                type="button"
+                onClick={() => switchLocale("en")}
+                className={cn(
+                  "rounded px-2 py-1 text-sm font-bold tracking-wider transition-all duration-200 hover:scale-110 cursor-pointer",
+                  locale === "en"
+                    ? "text-[#0F4C75]"
+                    : scrolled
+                      ? "text-gray-400 hover:text-[#0F4C75]"
+                      : "text-white/60 hover:text-white"
+                )}
+              >
+                EN
+              </button>
             </div>
             <IntlLink href="/kontakt" className="hidden sm:inline-block">
               <span
