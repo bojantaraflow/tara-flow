@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "next-intl";
 
-import { Link as IntlLink, usePathname, useRouter } from "@/i18n/navigation";
+import { Link as IntlLink } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -18,11 +18,11 @@ export function Navbar({ labels }: { labels: Record<string, string> }) {
   const [scrolled, setScrolled] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const locale = useLocale();
-  const pathname = usePathname();
-  const router = useRouter();
 
   const switchLocale = (newLocale: string) => {
-    router.push(pathname, { locale: newLocale as "bs" | "en" });
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.replace(`/${locale}`, `/${newLocale}`);
+    window.location.href = newPath;
   };
 
   useEffect(() => {
