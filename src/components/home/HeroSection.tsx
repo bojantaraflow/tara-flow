@@ -21,22 +21,17 @@ export function HeroSection({
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100vh] items-center justify-center"
+      className="relative flex w-full h-screen min-h-[600px] max-h-[900px] overflow-hidden items-center justify-center"
     >
       <Image
         src={HERO_IMAGE}
         alt="Rafting in canyon"
         fill
-        className="object-cover"
         priority
+        className="object-cover object-[center_30%] scale-90 md:scale-100"
         sizes="100vw"
       />
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)",
-        }}
-      />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/10 via-black/30 to-black/70" />
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center text-white">
         <h1
           className="text-6xl font-black tracking-tight text-white md:text-8xl"

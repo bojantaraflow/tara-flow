@@ -216,6 +216,24 @@ export function Navbar({ labels }: { labels: Record<string, string> }) {
         >
           {labels["nav.book"]}
         </IntlLink>
+        {/* Language switcher - mobile */}
+        <div className="flex items-center gap-4 mt-4">
+          <button
+            type="button"
+            onClick={() => switchLocale("bs")}
+            className={`text-lg font-black tracking-wider transition-all duration-200 ${locale === "bs" ? "text-white" : "text-white/40 hover:text-white/70"}`}
+          >
+            BS
+          </button>
+          <span className="text-lg text-white/30">|</span>
+          <button
+            type="button"
+            onClick={() => switchLocale("en")}
+            className={`text-lg font-black tracking-wider transition-all duration-200 ${locale === "en" ? "text-white" : "text-white/40 hover:text-white/70"}`}
+          >
+            EN
+          </button>
+        </div>
         <p className="absolute bottom-8 text-sm uppercase tracking-widest text-white/40">
           @taraflow
         </p>
