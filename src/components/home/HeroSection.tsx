@@ -28,7 +28,7 @@ export function HeroSection({
         alt="Rafting in canyon"
         fill
         priority
-        className="object-cover object-[center_30%] scale-90 md:scale-100"
+        className="object-cover object-[center_20%]"
         sizes="100vw"
       />
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/10 via-black/30 to-black/70" />
