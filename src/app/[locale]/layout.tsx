@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 
-import { LoadingScreen } from "@/components/LoadingScreen";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -42,7 +41,6 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <LoadingScreen />
       <Navbar labels={labels} />
       <main className="flex-1">{children}</main>
       <Footer labels={labels} />
