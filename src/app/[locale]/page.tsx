@@ -10,7 +10,7 @@ import { FAQSection } from "@/components/home/FAQSection";
 import { ContactSection } from "@/components/home/ContactSection";
 import { FadeIn } from "@/components/FadeIn";
 import { IntlLink } from "@/i18n/navigation";
-import { getFeaturedTours } from "@/data/ture";
+import { getFeaturedTours, tours } from "@/data/ture";
 
 export default async function HomePage({
   params,
@@ -31,8 +31,34 @@ export default async function HomePage({
     { q: t("faq.q4"), a: t("faq.a4") },
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristInformationCenter",
+    name: "Tara Flow",
+    description:
+      "Avanturistički turizam u srcu prirode. Rafting, hiking i nezaboravna iskustva na Tari i u okolici Foče.",
+    url: "https://taraflow.ba",
+    email: "taraflow@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Foča",
+      addressCountry: "BA",
+    },
+    sameAs: ["https://instagram.com/taraflow"],
+    offers: tours.map((tour) => ({
+      "@type": "Offer",
+      name: tour.nameBs,
+      price: tour.price,
+      priceCurrency: "EUR",
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <FadeIn>
         <HeroSection
         tagline={t("hero.tagline")}

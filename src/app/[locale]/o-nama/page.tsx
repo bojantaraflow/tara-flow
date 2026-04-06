@@ -4,7 +4,16 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "O nama — Bojan & Dalibor",
+  title: "O nama | Tara Flow — Bojan & Dalibor",
+  description:
+    "Upoznajte Bojana i Dalibora — licencirane vodiče i osnivače Tara Flow avanturističke agencije iz Foče, BiH.",
+  keywords:
+    "Tara Flow vodič, rafting vodič Foča, avanturistički turizam BiH, Bojan Dalibor",
+  openGraph: {
+    title: "O nama | Tara Flow",
+    description: "Upoznajte ljude iza Tara Flow avantura.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 import { FadeIn } from "@/components/FadeIn";

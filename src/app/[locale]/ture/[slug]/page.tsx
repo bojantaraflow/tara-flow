@@ -44,8 +44,24 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const tour = getTourBySlug(slug);
   if (!tour) return {};
-  const name = locale === "bs" ? tour.nameBs : tour.nameEn;
-  return { title: name };
+
+  const isBs = locale === "bs";
+  const name = isBs ? tour.nameBs : tour.nameEn;
+  const description = isBs ? tour.shortDescriptionBs : tour.shortDescriptionEn;
+
+  return {
+    title: `${name} | Tara Flow`,
+    description,
+    openGraph: {
+      title: `${name} | Tara Flow`,
+      description,
+      images: [{ url: tour.image, width: 1200, height: 630, alt: name }],
+      type: "website",
+    },
+    keywords: isBs
+      ? `${name}, rafting Tara, avantura Foča, BiH turizam, ${tour.difficulty}`
+      : `${name}, rafting Tara, adventure Foča, BiH tourism, ${tour.difficulty}`,
+  };
 }
 
 export default async function TourDetailPage({

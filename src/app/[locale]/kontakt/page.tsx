@@ -3,7 +3,15 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "Kontakt & Rezervacija",
+  title: "Kontakt | Tara Flow — Rezervacija",
+  description:
+    "Kontaktirajte Tara Flow za rezervaciju ture. Rafting, hiking, jahanje i jeep safari u Foči, BiH. Email: taraflow@gmail.com",
+  keywords: "kontakt Tara Flow, rezervacija rafting, booking avantura Foča",
+  openGraph: {
+    title: "Kontakt | Tara Flow",
+    description: "Rezervišite svoju avanturu danas.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 import { FadeIn } from "@/components/FadeIn";

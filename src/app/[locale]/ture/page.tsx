@@ -3,12 +3,21 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
 import { FadeIn } from "@/components/FadeIn";
-
-export const metadata: Metadata = {
-  title: "Sve ture — Rafting, Hiking, Jahanje",
-};
 import { TureGrid } from "@/components/home/TureGrid";
 import { tours, getToursByCategory } from "@/data/ture";
+
+export const metadata: Metadata = {
+  title: "Ture | Tara Flow — Rafting & Hiking Foča",
+  description:
+    "Sve naše avanturističke ture — rafting na Tari, hiking na Maglić, jahanje na Zelengori i jeep safari kroz NP Sutjeska. Foča, BiH.",
+  keywords:
+    "rafting Tara, hiking Maglić, jahanje Zelengora, jeep safari Sutjeska, avantura Foča, turizam BiH",
+  openGraph: {
+    title: "Ture | Tara Flow",
+    description: "Rafting, hiking, jahanje i jeep safari u srcu prirode BiH.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+};
 
 const TABS = [
   { key: "Svi", enKey: "tours.all" },
