@@ -1,17 +1,19 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
+function escapeHtml(text: unknown): string {
+  const s = String(text ?? "");
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export async function POST(req: Request) {
   const body = await req.json();
-  const {
-    ime,
-    email,
-    telefon = "",
-    brojOsoba = "",
-    datum = "",
-    tura = "",
-    poruka = "",
-  } = body;
+  const { ime, email, telefon, brojOsoba, datum, tura, poruka } = body;
 
   if (!ime || !email) {
     return NextResponse.json(
@@ -28,23 +30,27 @@ export async function POST(req: Request) {
     );
   }
 
+  const subjectTour = String(tura ?? "").trim() || "Opći upit";
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Tara Flow <onboarding@resend.dev>",
-      to: "taraflow@gmail.com",
-      subject: tura ? `Nova rezervacija — ${tura}` : "Nova poruka sa Tara Flow sajta",
-      replyTo: email,
+      to: "bojantaraflow@gmail.com",
+      replyTo: String(email),
+      subject: `Nova rezervacija — ${subjectTour}`,
       html: `
-        <h2>Nova rezervacija sa Tara Flow sajta</h2>
-        <p><strong>Ime:</strong> ${ime}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Telefon:</strong> ${telefon || "—"}</p>
-        <p><strong>Tura:</strong> ${tura || "—"}</p>
-        <p><strong>Broj osoba:</strong> ${brojOsoba || "—"}</p>
-        <p><strong>Željeni datum:</strong> ${datum || "—"}</p>
-        <p><strong>Poruka:</strong></p>
-        <p>${String(poruka).replace(/\n/g, "<br />") || "—"}</p>
+        <h2 style="color: #0F4C75;">Nova rezervacija sa Tara Flow sajta</h2>
+        <p><strong>Ime:</strong> ${escapeHtml(ime)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p><strong>Telefon:</strong> ${escapeHtml(telefon)}</p>
+        <p><strong>Tura:</strong> ${escapeHtml(tura)}</p>
+        <p><strong>Broj osoba:</strong> ${escapeHtml(brojOsoba)}</p>
+        <p><strong>Željeni datum:</strong> ${escapeHtml(datum)}</p>
+        <p><strong>Poruka:</strong> ${escapeHtml(poruka).replace(/\n/g, "<br />")}</p>
+        <hr/>
+        <p style="color: #888;">Poruka poslana sa taraflow.ba</p>
       `,
     });
     return NextResponse.json({ success: true });

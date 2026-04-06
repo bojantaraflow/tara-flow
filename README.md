@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000).
 Create `.env.local` and add:
 
 ```
-RESEND_API_KEY=re_xxxx
+RESEND_API_KEY=re_PRouWTpt_7v4E5TBTaFRV4dwYbMTZdxoR
 ```
 
 Get your API key at [resend.com](https://resend.com). The contact form sends emails to `taraflow@gmail.com`.

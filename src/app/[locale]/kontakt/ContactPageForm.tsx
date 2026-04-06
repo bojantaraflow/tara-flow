@@ -2,14 +2,17 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 export function ContactPageForm() {
   const t = useTranslations("contact");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+
+  const isLoading = status === "loading";
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -22,13 +25,13 @@ export function ContactPageForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ime: formData.get("name"),
+          ime: formData.get("ime"),
           email: formData.get("email"),
-          telefon: "",
-          brojOsoba: "",
-          datum: "",
-          tura: formData.get("subject") || "Opća poruka",
-          poruka: formData.get("message"),
+          telefon: formData.get("telefon") ?? "",
+          brojOsoba: formData.get("brojOsoba") ?? "",
+          datum: formData.get("datum") ?? "",
+          tura: formData.get("tura") ?? "",
+          poruka: formData.get("poruka") ?? "",
         }),
       });
       if (res.ok) {
@@ -42,13 +45,25 @@ export function ContactPageForm() {
     }
   }
 
+  if (status === "success") {
+    return (
+      <div className="text-center py-8">
+        <div className="text-5xl mb-4">✅</div>
+        <h3 className="text-2xl font-black text-[#0F4C75] mb-2">
+          {t("thankYouTitle")}
+        </h3>
+        <p className="text-gray-500">{t("thankYouSubtitle")}</p>
+      </div>
+    );
+  }
+
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="mb-1 block text-sm font-medium">
+        <label htmlFor="ime" className="mb-1 block text-sm font-medium">
           {t("name")}
         </label>
-        <Input id="name" name="name" required />
+        <Input id="ime" name="ime" required />
       </div>
       <div>
         <label htmlFor="email" className="mb-1 block text-sm font-medium">
@@ -57,35 +72,46 @@ export function ContactPageForm() {
         <Input id="email" name="email" type="email" required />
       </div>
       <div>
-        <label htmlFor="subject" className="mb-1 block text-sm font-medium">
-          {t("subject")}
+        <label htmlFor="telefon" className="mb-1 block text-sm font-medium">
+          {t("phone")}
         </label>
-        <Input id="subject" name="subject" />
+        <Input id="telefon" name="telefon" type="tel" />
       </div>
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm font-medium">
+        <label htmlFor="brojOsoba" className="mb-1 block text-sm font-medium">
+          {t("persons")}
+        </label>
+        <Input id="brojOsoba" name="brojOsoba" type="number" min={1} />
+      </div>
+      <div>
+        <label htmlFor="datum" className="mb-1 block text-sm font-medium">
+          {t("desiredDate")}
+        </label>
+        <Input id="datum" name="datum" type="date" />
+      </div>
+      <div>
+        <label htmlFor="tura" className="mb-1 block text-sm font-medium">
+          {t("subject")}
+        </label>
+        <Input id="tura" name="tura" />
+      </div>
+      <div>
+        <label htmlFor="poruka" className="mb-1 block text-sm font-medium">
           {t("message")}
         </label>
         <textarea
-          id="message"
-          name="message"
+          id="poruka"
+          name="poruka"
           rows={4}
           required
           className="flex w-full rounded-lg border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         />
       </div>
-      {status === "success" && (
-        <p className="text-sm font-medium text-green-600">{t("formSuccess")}</p>
-      )}
       {status === "error" && (
-        <p className="text-sm font-medium text-destructive">{t("error")}</p>
+        <p className="text-red-500 text-center mt-4">{t("errorWithEmail")}</p>
       )}
-      <Button type="submit" className="w-full" disabled={status === "loading"}>
-        {status === "loading" ? (
-          <Loader2 className="mx-auto h-5 w-5 animate-spin" />
-        ) : (
-          t("send")
-        )}
+      <Button type="submit" className="w-full" disabled={isLoading}>
+        {isLoading ? t("sending") : t("sendInquiry")}
       </Button>
     </form>
   );
