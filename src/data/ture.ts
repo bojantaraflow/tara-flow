@@ -131,12 +131,67 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Trebam li iskustvo?", answer: "Ne, rafting je prilagođen svim uzrastima i nije potrebno prethodno iskustvo." },
-      { question: "Šta ako je loše vrijeme?", answer: "Tura se odvija po svakom vremenu osim u slučaju ekstremnih uslova. Uvijek vas obavještavamo unaprijed." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za rafting?",
+        answer:
+          "Nije potrebno nikakvo prethodno iskustvo. Naši iskusni skiperi vas uvode u sve što trebate znati prije polaska na vodu.",
+      },
+      {
+        question: "Koliko traje rafting?",
+        answer: "Rafting spust traje oko 4-5 sati zavisno od vodostaja rijeke i tempa grupe.",
+      },
+      {
+        question: "Da li ima dobne granice za rafting?",
+        answer:
+          "Minimalna starost za rafting u ljetnom periodu je 6 godina. Za djecu mlađu od 6 godina preporučujemo druge aktivnosti.",
+      },
     ],
     faqEn: [
-      { question: "Do I need experience?", answer: "No, rafting is suitable for all ages and no prior experience is required." },
-      { question: "What if the weather is bad?", answer: "The tour takes place in any weather except in case of extreme conditions. We always inform you in advance." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for rafting?",
+        answer:
+          "No prior experience is required. Our experienced skippers introduce you to everything you need to know before heading out on the water.",
+      },
+      {
+        question: "How long does the rafting last?",
+        answer:
+          "The rafting descent lasts about 4-5 hours depending on the water level and group pace.",
+      },
+      {
+        question: "Is there an age limit for rafting?",
+        answer:
+          "The minimum age for rafting in summer is 6 years. For children under 6 we recommend other activities.",
+      },
     ],
     similarTours: ["rafting-maglic", "rafting-trnovacko", "rafting-tarom"],
     groupSizeBs: "4-12 osoba",
@@ -228,12 +283,68 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Koliko je zahtjevan uspon na Maglić?", answer: "Uspon je srednje težine, traje oko 4-5 sati. Dobra fizička kondicija je preporučena." },
-      { question: "Da li je uključena oprema za planinarenje?", answer: "Da, sva potrebna oprema je uključena u cijenu." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za planinarenje?",
+        answer:
+          "Nije potrebno prethodno iskustvo. Naš vodič prilagođava tempo grupe i brine o svim učesnicima tokom cijele ture.",
+      },
+      {
+        question: "Da li ima dobne granice?",
+        answer:
+          "Minimalna starost za planinarenje i hiking ture je 8 godina uz pratnju roditelja.",
+      },
+      {
+        question: "Koliko traje tura?",
+        answer:
+          "Zavisno od ture, planinarenje traje između 6 i 8 sati uključujući transport i pauze.",
+      },
     ],
     faqEn: [
-      { question: "How demanding is the ascent to Maglić?", answer: "The ascent is of medium difficulty, takes about 4-5 hours. Good physical condition is recommended." },
-      { question: "Is hiking equipment included?", answer: "Yes, all necessary equipment is included in the price." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for hiking?",
+        answer:
+          "No prior experience is required. Our guide adapts the pace to the group and takes care of all participants throughout the tour.",
+      },
+      {
+        question: "Is there an age limit?",
+        answer:
+          "The minimum age for hiking tours is 8 years with parental supervision.",
+      },
+      {
+        question: "How long does the tour last?",
+        answer:
+          "Depending on the tour, hiking lasts between 6 and 8 hours including transport and breaks.",
+      },
     ],
     similarTours: ["vikend-na-tari", "rafting-trnovacko", "tara-full-experience"],
     groupSizeBs: "4-10 osoba",
@@ -325,12 +436,68 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Može li se kupati u jezeru?", answer: "Da! Trnovačko jezero je čisto i osvježavajuće, kupanje je dozvoljeno." },
-      { question: "Koliko je dug pohod do jezera?", answer: "Oko 3-4 sata hoda u jednom smjeru, srednje težine." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za planinarenje?",
+        answer:
+          "Nije potrebno prethodno iskustvo. Naš vodič prilagođava tempo grupe i brine o svim učesnicima tokom cijele ture.",
+      },
+      {
+        question: "Da li ima dobne granice?",
+        answer:
+          "Minimalna starost za planinarenje i hiking ture je 8 godina uz pratnju roditelja.",
+      },
+      {
+        question: "Koliko traje tura?",
+        answer:
+          "Zavisno od ture, planinarenje traje između 6 i 8 sati uključujući transport i pauze.",
+      },
     ],
     faqEn: [
-      { question: "Can you swim in the lake?", answer: "Yes! Trnovačko Lake is clean and refreshing, swimming is allowed." },
-      { question: "How long is the hike to the lake?", answer: "About 3-4 hours of walking in one direction, medium difficulty." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for hiking?",
+        answer:
+          "No prior experience is required. Our guide adapts the pace to the group and takes care of all participants throughout the tour.",
+      },
+      {
+        question: "Is there an age limit?",
+        answer:
+          "The minimum age for hiking tours is 8 years with parental supervision.",
+      },
+      {
+        question: "How long does the tour last?",
+        answer:
+          "Depending on the tour, hiking lasts between 6 and 8 hours including transport and breaks.",
+      },
     ],
     similarTours: ["vikend-na-tari", "rafting-maglic", "trnovacko-jezero"],
     groupSizeBs: "4-12 osoba",
@@ -434,12 +601,68 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Za koga je ova tura?", answer: "Za fizički aktivne osobe koje žele maksimum avanture. Nije preporučena za početnike bez kondicioniranja." },
-      { question: "Koliko osoba može biti u grupi?", answer: "Maksimalno 10 osoba radi kvaliteta iskustva." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za planinarenje?",
+        answer:
+          "Nije potrebno prethodno iskustvo. Naš vodič prilagođava tempo grupe i brine o svim učesnicima tokom cijele ture.",
+      },
+      {
+        question: "Da li ima dobne granice?",
+        answer:
+          "Minimalna starost za planinarenje i hiking ture je 8 godina uz pratnju roditelja.",
+      },
+      {
+        question: "Koliko traje tura?",
+        answer:
+          "Zavisno od ture, planinarenje traje između 6 i 8 sati uključujući transport i pauze.",
+      },
     ],
     faqEn: [
-      { question: "Who is this tour for?", answer: "For physically active people who want maximum adventure. Not recommended for beginners without conditioning." },
-      { question: "How many people can be in the group?", answer: "Maximum 10 people for quality experience." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for hiking?",
+        answer:
+          "No prior experience is required. Our guide adapts the pace to the group and takes care of all participants throughout the tour.",
+      },
+      {
+        question: "Is there an age limit?",
+        answer:
+          "The minimum age for hiking tours is 8 years with parental supervision.",
+      },
+      {
+        question: "How long does the tour last?",
+        answer:
+          "Depending on the tour, hiking lasts between 6 and 8 hours including transport and breaks.",
+      },
     ],
     similarTours: ["rafting-maglic", "rafting-trnovacko", "vikend-na-tari"],
     groupSizeBs: "4-8 osoba",
@@ -525,12 +748,67 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Koliko traje rafting?", answer: "Oko 4-5 sati plovidbe, zavisno od vodostaja rijeke." },
-      { question: "Je li rafting opasan?", answer: "Sa iskusnim vodičem i opremom, rafting na Tari je siguran za sve uzraste." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za rafting?",
+        answer:
+          "Nije potrebno nikakvo prethodno iskustvo. Naši iskusni skiperi vas uvode u sve što trebate znati prije polaska na vodu.",
+      },
+      {
+        question: "Koliko traje rafting?",
+        answer: "Rafting spust traje oko 4-5 sati zavisno od vodostaja rijeke i tempa grupe.",
+      },
+      {
+        question: "Da li ima dobne granice za rafting?",
+        answer:
+          "Minimalna starost za rafting u ljetnom periodu je 6 godina. Za djecu mlađu od 6 godina preporučujemo druge aktivnosti.",
+      },
     ],
     faqEn: [
-      { question: "How long does the rafting last?", answer: "About 4-5 hours of rafting, depending on the water level." },
-      { question: "Is rafting dangerous?", answer: "With an experienced guide and equipment, rafting on Tara is safe for all ages." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for rafting?",
+        answer:
+          "No prior experience is required. Our experienced skippers introduce you to everything you need to know before heading out on the water.",
+      },
+      {
+        question: "How long does the rafting last?",
+        answer:
+          "The rafting descent lasts about 4-5 hours depending on the water level and group pace.",
+      },
+      {
+        question: "Is there an age limit for rafting?",
+        answer:
+          "The minimum age for rafting in summer is 6 years. For children under 6 we recommend other activities.",
+      },
     ],
     similarTours: ["vikend-na-tari", "rafting-drinom", "rafting-maglic"],
     groupSizeBs: "4-8 osoba",
@@ -616,12 +894,67 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Je li Drina pogodna za djecu?", answer: "Da, Drina je mirnija rijeka i idealna je za porodice sa djecom." },
-      { question: "Koja je razlika između Tare i Drine?", answer: "Tara ima više brzaka i adrenalina, Drina je mirnija i opuštenija. Obje su prekrasne." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za rafting?",
+        answer:
+          "Nije potrebno nikakvo prethodno iskustvo. Naši iskusni skiperi vas uvode u sve što trebate znati prije polaska na vodu.",
+      },
+      {
+        question: "Koliko traje rafting?",
+        answer: "Rafting spust traje oko 4-5 sati zavisno od vodostaja rijeke i tempa grupe.",
+      },
+      {
+        question: "Da li ima dobne granice za rafting?",
+        answer:
+          "Minimalna starost za rafting u ljetnom periodu je 6 godina. Za djecu mlađu od 6 godina preporučujemo druge aktivnosti.",
+      },
     ],
     faqEn: [
-      { question: "Is the Drina suitable for children?", answer: "Yes, the Drina is a calmer river and ideal for families with children." },
-      { question: "What is the difference between Tara and Drina?", answer: "Tara has more rapids and adrenaline, Drina is calmer and more relaxed. Both are beautiful." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for rafting?",
+        answer:
+          "No prior experience is required. Our experienced skippers introduce you to everything you need to know before heading out on the water.",
+      },
+      {
+        question: "How long does the rafting last?",
+        answer:
+          "The rafting descent lasts about 4-5 hours depending on the water level and group pace.",
+      },
+      {
+        question: "Is there an age limit for rafting?",
+        answer:
+          "The minimum age for rafting in summer is 6 years. For children under 6 we recommend other activities.",
+      },
     ],
     similarTours: ["rafting-tarom", "vikend-na-tari", "jeep-safari-sutjeska"],
     groupSizeBs: "4-8 osoba",
@@ -697,12 +1030,58 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Trebam li iskustvo u jahanju?", answer: "Ne, početnici su dobrodošli. Instruktor će te naučiti osnove prije polaska." },
-      { question: "Da li je jahanje sigurno?", answer: "Da, konji su uvježbani za terensko jahanje i iskusni su s turistima." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Trebam li iskustvo u jahanju?",
+        answer:
+          "Ne, početnici su dobrodošli! Instruktor jahanja vas uvodi u osnove prije polaska na stazu.",
+      },
+      {
+        question: "Da li ima dobne granice za jahanje?",
+        answer:
+          "Jahanje je prilagođeno svim uzrastima. Za najmlađe učesnike preporučujemo da nas kontaktirate unaprijed.",
+      },
     ],
     faqEn: [
-      { question: "Do I need riding experience?", answer: "No, beginners are welcome. The instructor will teach you the basics before departure." },
-      { question: "Is riding safe?", answer: "Yes, the horses are trained for trail riding and experienced with tourists." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Do I need riding experience?",
+        answer:
+          "No, beginners are welcome! The riding instructor introduces you to the basics before heading out on the trail.",
+      },
+      {
+        question: "Is there an age limit for horse riding?",
+        answer:
+          "Horse riding is suitable for all ages. For the youngest participants we recommend contacting us in advance.",
+      },
     ],
     similarTours: ["jeep-safari-sutjeska", "trnovacko-jezero", "perucica-skakavac"],
     groupSizeBs: "2-6 osoba",
@@ -799,12 +1178,68 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Koliko traje uspon?", answer: "Oko 3-4 sata u jednom smjeru, zavisno od tempa grupe." },
-      { question: "Može li se kupati?", answer: "Da, kupanje je dozvoljeno i toplo preporučeno — voda je čista i osvježavajuća." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za planinarenje?",
+        answer:
+          "Nije potrebno prethodno iskustvo. Naš vodič prilagođava tempo grupe i brine o svim učesnicima tokom cijele ture.",
+      },
+      {
+        question: "Da li ima dobne granice?",
+        answer:
+          "Minimalna starost za planinarenje i hiking ture je 8 godina uz pratnju roditelja.",
+      },
+      {
+        question: "Koliko traje tura?",
+        answer:
+          "Zavisno od ture, planinarenje traje između 6 i 8 sati uključujući transport i pauze.",
+      },
     ],
     faqEn: [
-      { question: "How long does the ascent take?", answer: "About 3-4 hours in one direction, depending on the group's pace." },
-      { question: "Can you swim?", answer: "Yes, swimming is allowed and highly recommended — the water is clean and refreshing." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for hiking?",
+        answer:
+          "No prior experience is required. Our guide adapts the pace to the group and takes care of all participants throughout the tour.",
+      },
+      {
+        question: "Is there an age limit?",
+        answer:
+          "The minimum age for hiking tours is 8 years with parental supervision.",
+      },
+      {
+        question: "How long does the tour last?",
+        answer:
+          "Depending on the tour, hiking lasts between 6 and 8 hours including transport and breaks.",
+      },
     ],
     similarTours: ["rafting-trnovacko", "perucica-skakavac", "jahanje-zelengora"],
     groupSizeBs: "4-12 osoba",
@@ -904,12 +1339,68 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Zašto je potreban vodič za prašumu?", answer: "Ulaz u prašumu Perućica dozvoljen je isključivo uz ovlaštenog vodiča radi zaštite ovog prirodnog blaga." },
-      { question: "Koliko traje obilazak?", answer: "Cijeli izlet traje oko 6-7 sati zajedno s putovanjem." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Da li je potrebno iskustvo za planinarenje?",
+        answer:
+          "Nije potrebno prethodno iskustvo. Naš vodič prilagođava tempo grupe i brine o svim učesnicima tokom cijele ture.",
+      },
+      {
+        question: "Da li ima dobne granice?",
+        answer:
+          "Minimalna starost za planinarenje i hiking ture je 8 godina uz pratnju roditelja.",
+      },
+      {
+        question: "Koliko traje tura?",
+        answer:
+          "Zavisno od ture, planinarenje traje između 6 i 8 sati uključujući transport i pauze.",
+      },
     ],
     faqEn: [
-      { question: "Why is a guide needed for the forest?", answer: "Entry to Perućica forest is only allowed with an authorised guide to protect this natural treasure." },
-      { question: "How long does the tour last?", answer: "The entire trip takes about 6-7 hours including travel." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is experience required for hiking?",
+        answer:
+          "No prior experience is required. Our guide adapts the pace to the group and takes care of all participants throughout the tour.",
+      },
+      {
+        question: "Is there an age limit?",
+        answer:
+          "The minimum age for hiking tours is 8 years with parental supervision.",
+      },
+      {
+        question: "How long does the tour last?",
+        answer:
+          "Depending on the tour, hiking lasts between 6 and 8 hours including transport and breaks.",
+      },
     ],
     similarTours: ["trnovacko-jezero", "jahanje-zelengora", "jeep-safari-sutjeska"],
     groupSizeBs: "4-12 osoba",
@@ -1017,12 +1508,58 @@ export const tours: Tour[] = [
       "Warm jacket (recommended for spring and late summer)",
     ],
     faqBs: [
-      { question: "Je li safari prikladan za djecu?", answer: "Apsolutno! Jeep safari je odličan za cijelu porodicu, uključujući djecu svih uzrasta." },
-      { question: "Koliko osoba stane u vozilo?", answer: "4-6 osoba po vozilu, zavisno od tipa terenskog vozila." },
+      {
+        question: "Koliko osoba je minimalno potrebno?",
+        answer:
+          "Minimalan broj učesnika je 4 osobe. Ukoliko ste manja grupa, kontaktirajte nas i pokušat ćemo naći rješenje.",
+      },
+      {
+        question: "Kako se rezerviše tura?",
+        answer:
+          "Rezervacija se vrši putem WhatsApp poruke ili Instagram poruke. Javite nam se i dogovorimo sve detalje!",
+      },
+      {
+        question: "Šta ako je loše vrijeme?",
+        answer:
+          "U slučaju lošeg vremena dogovaramo se sa gostima o odgodi ili promjeni termina. Vaša sigurnost i udobnost su nam prioritet.",
+      },
+      {
+        question: "Je li jeep safari prikladan za djecu?",
+        answer:
+          "Apsolutno! Jeep safari je odličan za cijelu porodicu, uključujući djecu svih uzrasta.",
+      },
+      {
+        question: "Koliko osoba stane u vozilo?",
+        answer:
+          "4-6 osoba po terenskom vozilu. Za veće grupe organizujemo više vozila.",
+      },
     ],
     faqEn: [
-      { question: "Is the safari suitable for children?", answer: "Absolutely! Jeep safari is great for the whole family, including children of all ages." },
-      { question: "How many people fit in the vehicle?", answer: "4-6 people per vehicle, depending on the type of all-terrain vehicle." },
+      {
+        question: "What is the minimum number of people required?",
+        answer:
+          "The minimum number of participants is 4 people. If you are a smaller group, contact us and we will try to find a solution.",
+      },
+      {
+        question: "How do I book a tour?",
+        answer:
+          "Booking is done via WhatsApp message or Instagram message. Get in touch and we will arrange all the details!",
+      },
+      {
+        question: "What if the weather is bad?",
+        answer:
+          "In case of bad weather we arrange with guests to postpone or change the date. Your safety and comfort are our priority.",
+      },
+      {
+        question: "Is the jeep safari suitable for children?",
+        answer:
+          "Absolutely! Jeep safari is great for the whole family, including children of all ages.",
+      },
+      {
+        question: "How many people fit in the vehicle?",
+        answer:
+          "4-6 people per all-terrain vehicle. For larger groups we organise multiple vehicles.",
+      },
     ],
     similarTours: ["rafting-drinom", "perucica-skakavac", "jahanje-zelengora"],
     groupSizeBs: "4-6 osoba",

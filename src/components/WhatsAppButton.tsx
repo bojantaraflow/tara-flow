@@ -10,7 +10,7 @@ export function WhatsAppButton() {
     return () => clearTimeout(timer);
   }, []);
 
-  const phoneNumber = "38765000000"; // UPDATE WITH REAL NUMBER
+  const phoneNumber = "38765246309";
   const message = encodeURIComponent(
     "Zdravo! Zanima me rezervacija ture."
   );
