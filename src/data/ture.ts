@@ -69,7 +69,7 @@ export const tours: Tour[] = [
     descriptionBs: "Provedite vikend uz rijeku Taru. Rafting, kampiranje i opuštanje u srcu prirode.",
     descriptionEn: "Spend a weekend by the Tara River. Rafting, camping and relaxation in the heart of nature.",
     longDescriptionBs:
-      "Provedi nezaboravan vikend na obali rijeke Tare, jedne od najčišćih rijeka u Evropi. Uz zvuk rijeke i miris borove šume, ovaj aranžman nudi savršen bijeg od svakodnevice. Rafting kroz kanjon Tare nudi kombinaciju adrenalina i nevjerovatnih prirodnih prizora koji se ne mogu opisati riječima. Smještaj u kampu uz vatru, domaća hrana i odlično društvo čine ovaj vikend potpunim iskustvom.",
+      "Otkrijte nezaboravan vikend pun adrenalina i netaknute prirode! Tura se sastoji od raftinga rijekom Tarom kroz spektakularni kanjon, uz stručne vodiče i kompletnu opremu, koji garantuju sigurnost i vrhunski doživljaj. Nakon uzbuđenja na vodi, opustite se uz noćenje u prirodnom ambijentu i odličnoj atmosferi. Vikend na Tari je savršena kombinacija avanture i odmora — iskustvo koje puni energijom i stvara uspomene za cijeli život.",
     longDescriptionEn:
       "Spend an unforgettable weekend on the banks of the Tara River, one of the cleanest rivers in Europe. With the sound of the river and the scent of pine forest, this arrangement offers the perfect escape from everyday life. Rafting through the Tara Canyon offers a combination of adrenaline and incredible natural scenery that cannot be described in words. Camp accommodation by the fire, home-cooked food and great company make this weekend a complete experience.",
     itineraryBs: [
@@ -165,7 +165,7 @@ export const tours: Tour[] = [
     descriptionBs: "Rafting na Tari i pješačenje do čarobnog Trnovačkog jezera.",
     descriptionEn: "Rafting on Tara and hiking to the magical Trnovačko Lake.",
     longDescriptionBs:
-      "Kombinacija koja oduzima dah — rafting na Tari i pohod do Trnovačkog jezera, jednog od najljepših jezera u Evropi u obliku srca. Okruženo planinama i borovim šumama, jezero je nagrada za svaki korak puta. Ovaj aranžman savršen je za ljubitelje prirode, fotografe i sve koji žele doživjeti BiH u punom sjaju.",
+      "Doživite nezaboravnu trodnevnu avanturu u srcu netaknute prirode! Ova pažljivo osmišljena tura kombinuje adrenalin, odmor i istraživanje najljepših prirodnih predjela regiona. Tokom tri dana i dvije noći, vodimo vas kroz najljepše i najdivlje predjele Balkana, gdje rijeka Tara probija put kroz jedan od najdubljih kanjona Evrope, a Trnovačko jezero otkriva prizor koji oduzima dah. Avantura počinje raftingom na Tari — rijeci poznatoj po svojoj smaragdnoj boji i nadimku 'suza Evrope'. Spust kroz moćne brzake i netaknutu prirodu pruža savršen balans uzbuđenja i sigurnosti. Bez obzira da li ste početnik ili iskusni avanturista, naši licencirani vodiči i vrhunska oprema garantuju maksimalan užitak i bezbrižnost. Nakon adrenalina, slijedi potpuni kontrast — mir i tišina planinskog ambijenta. Obilazak Trnovačkog jezera vodi vas do jednog od najfotogeničnijih mjesta u regionu. Njegov prepoznatljiv oblik srca, kristalno čista voda i impresivni planinski vrhovi stvaraju pejzaž koji ostaje urezan u sjećanju.",
     longDescriptionEn:
       "A breathtaking combination — rafting on Tara and hike to Trnovačko Lake, one of the most beautiful heart-shaped lakes in Europe. Surrounded by mountains and pine forests, the lake is the reward for every step. This package is perfect for nature lovers, photographers and anyone who wants to experience BiH in full splendor.",
     itineraryBs: [
@@ -214,7 +214,7 @@ export const tours: Tour[] = [
     descriptionBs: "Potpuna avantura: rafting, Maglić, Trnovačko jezero i Zelengora. Sve u jednom paketu.",
     descriptionEn: "Complete adventure: rafting, Maglić, Trnovačko Lake and Zelengora. All in one package.",
     longDescriptionBs:
-      "Četiri dana potpunog uranjanja u prirodu Bosne i Hercegovine. Rafting Tarom, uspon na Maglić, Trnovačko jezero i prašuma Perućica — sve u jednom aranžmanu. Ovo je naša flagship tura, dizajnirana za one koji žele maksimum od svog avanturističkog iskustva. Manji broj učesnika, personalizovani pristup i nezaboravna iskustva garantovani.",
+      "Ako tražiš više od običnog odmora — ovo je avantura za tebe. 'Tara Full Experience' je četvorodnevno putovanje kroz najljepše i najdivljije dijelove prirode Balkana. Spoj adrenalina, planinskih vrhova, kristalno čistih rijeka i netaknute prirode čini ovu turu jedinstvenim iskustvom koje se ne zaboravlja. Prvog dana upoznaješ snagu rijeke Tare kroz nezaboravan rafting — brzaci, smijeh i adrenalin koji podižu energiju od samog početka. Nakon toga, avantura se nastavlja ka planinama, gdje te čeka uspon na Maglić — najviši vrh Bosne i Hercegovine (2386m) sa pogledom koji oduzima dah. Poseban doživljaj je obilazak Trnovačkog jezera — skrivenog dragulja prirode, poznatog po svom jedinstvenom obliku i nestvarnim bojama. Na kraju, ulaziš u srce prašume Perućice — jedne od posljednjih prašuma u Evropi, gdje vrijeme kao da je stalo, a priroda ostala potpuno divlja i netaknuta. Sve to u 4 dana i 3 noći, uz iskusne vodiče, sigurnu organizaciju i atmosferu koju pamtiš cijeli život.",
     longDescriptionEn:
       "Four days of complete immersion in the nature of Bosnia and Herzegovina. Rafting on Tara, ascent to Maglić, Trnovačko Lake and Perućica primeval forest — all in one package. This is our flagship tour, designed for those who want the maximum from their adventure experience. Smaller number of participants, personalized approach and unforgettable experiences guaranteed.",
     itineraryBs: [
@@ -265,7 +265,7 @@ export const tours: Tour[] = [
     descriptionBs: "Klasičan rafting na emerald zelenoj rijeci Tari. Prirodne brzace i nezaboravni pogledi.",
     descriptionEn: "Classic rafting on the emerald green Tara River. Natural rapids and unforgettable views.",
     longDescriptionBs:
-      "Dvadesetpet kilometara raftinga kroz najdublji kanjon u Evropi — kanjon rijeke Tare. Brzaci, tišina između rapids-a, kristalno čista voda i zidovi kanjona koji se uzdižu stotinama metara iznad vas. Ovo je iskustvo koje jednom doživiš, a nikad ne zaboraviš. Prilagođeno svim uzrastima, bez potrebe za prethodnim iskustvom.",
+      "Ako želiš da osjetiš pravu čar rijeke Tare, a nemaš puno vremena — jednodnevni rafting je pravi izbor. Kristalno čista voda, uzbudljivi brzaci i netaknuta priroda stvaraju savršenu kombinaciju adrenalina i uživanja. Tokom spusta prolazimo kroz najljepše dijelove kanjona, uz pauze za odmor, kupanje i fotografisanje. Bez obzira da li dolaziš prvi put ili već voliš avanturu — ova tura je prilagođena svima. Uz iskusne skipere i vrhunsku opremu, sigurnost i dobra atmosfera su zagarantovani. Jedan dan. Bezbroj uspomena.",
     longDescriptionEn:
       "Twenty-five kilometres of rafting through the deepest canyon in Europe — the Tara River canyon. Rapids, silence between rapids, crystal clear water and canyon walls rising hundreds of metres above you. This is an experience you live once and never forget. Suitable for all ages, no prior experience required.",
     itineraryBs: [
@@ -367,7 +367,7 @@ export const tours: Tour[] = [
     descriptionBs: "Jahanje kroz Zelengoru — jedinstven način da istražite planinu.",
     descriptionEn: "Horse riding through Zelengora — a unique way to explore the mountain.",
     longDescriptionBs:
-      "Jedinstven način da doživeš planinu Zelengoru — na konjskom sedlu. Terensko jahanje kroz planinske livade, uz jezera i vidikovce koji oduzimaju dah. Iskustvo jahanja u netaknutoj prirodi, daleko od gradske buke. Prilagođeno i za početnike u jahanju.",
+      "Zelengora na način na koji se priroda zaista osjeća — na konju, u potpunom miru i slobodi. Jahanje kroz prostrane livade, planinske staze i netaknutu prirodu pruža potpuno drugačiji doživljaj od klasičnih izleta. Bez buke, bez gužve — samo ti, konj i priroda koja oduzima dah. Zelengora, poznata po svojim jezerima i beskrajnim pejzažima, savršena je za ovakvu vrstu avanture. Tokom ture prolaziš kroz skrivene predjele koje nije moguće doživjeti na drugi način, uz pauze za odmor, fotografisanje i uživanje u tišini prirode. Bez obzira da li si početnik ili imaš iskustva u jahanju, ture su prilagođene svima uz stručne vodiče koji će te uvesti u cijelo iskustvo. Ovo nije samo jahanje. Ovo je povratak prirodi.",
     longDescriptionEn:
       "A unique way to experience Zelengora mountain — on horseback. Trail riding through mountain meadows, past lakes and breathtaking viewpoints. A riding experience in untouched nature, far from the city bustle. Suitable for riding beginners too.",
     itineraryBs: [
@@ -469,7 +469,7 @@ export const tours: Tour[] = [
     descriptionBs: "Šetnja prašumom Perućicom i do impresivnog vodopada Skakavac.",
     descriptionEn: "Walk through Perućica primeval forest and to the impressive Skakavac waterfall.",
     longDescriptionBs:
-      "Prašuma Perućica jedna je od posljednjih prašuma u Evropi i pravo je prirodno čudo. Stabla stara stotinama godina, netaknuta priroda i vodopad Skakavac koji pada s visine od 75 metara. Obilazak ove prašume dozvoljeno je samo uz ovlaštenog vodiča, što čini ovaj izlet još ekskluzivnijim i posebnijim.",
+      "Doživi netaknutu prirodu kroz obilazak prašume Perućice — jedne od posljednjih prašuma u Evropi, gdje vrijeme kao da je stalo. Tura uključuje i pogled na vodopad Skakavac, visok oko 75 metara, koji se ubraja među najimpresivnije vodopade u regionu. Okružen gustom šumom i divljinom, pruža prizor koji se dugo pamti. Idealno za sve koji žele mir, prirodu i autentično iskustvo daleko od gužve.",
     longDescriptionEn:
       "Perućica Primeval Forest is one of the last primeval forests in Europe and a true natural wonder. Trees hundreds of years old, untouched nature and Skakavac waterfall falling from a height of 75 metres. Visiting this forest is only allowed with an authorised guide, making this trip even more exclusive and special.",
     itineraryBs: [
