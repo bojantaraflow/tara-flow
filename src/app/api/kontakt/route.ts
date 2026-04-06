@@ -1,6 +1,15 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
+/**
+ * Resend bez verifikovanog domena: na besplatnom planu poruke sa `from: onboarding@resend.dev`
+ * mogu ići samo na adrese koje su verifikovane u Resend dashboardu (Settings → verified emails —
+ * dodaj npr. bojantaraflow@gmail.com i potvrdi link iz maila). `to` mora biti ta ista (ili druga
+ * eksplicitno dodana) adresa. Za produkciju dodaj svoj domen u Resend i promijeni `from`.
+ */
+const NOTIFICATION_TO =
+  process.env.RESEND_TO_EMAIL ?? "bojantaraflow@gmail.com";
+
 function escapeHtml(text: unknown): string {
   const s = String(text ?? "");
   return s
@@ -38,7 +47,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "bojantaraflow@gmail.com",
+      to: NOTIFICATION_TO,
       subject: `Nova rezervacija — ${subjectTour}`,
       replyTo: String(email),
       html: `
