@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000).
 Create `.env.local` and add:
 
 ```
-RESEND_API_KEY=re_PRouWTpt_7v4E5TBTaFRV4dwYbMTZdxoR
+RESEND_API_KEY=your_api_key_here
 ```
 
 Get your API key at [resend.com](https://resend.com). The contact form sends emails to `bojantaraflow@gmail.com`.
