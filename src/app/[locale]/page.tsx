@@ -38,13 +38,13 @@ export default async function HomePage({
     description:
       "Avanturistički turizam u srcu prirode. Rafting, hiking i nezaboravna iskustva na Tari i u okolici Foče.",
     url: "https://taraflow.ba",
-    email: "taraflow@gmail.com",
+    email: "bojantaraflow@gmail.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Foča",
       addressCountry: "BA",
     },
-    sameAs: ["https://instagram.com/taraflow"],
+    sameAs: ["https://instagram.com/_taraflow_"],
     offers: tours.map((tour) => ({
       "@type": "Offer",
       name: tour.nameBs,

@@ -25,10 +25,10 @@ export function ContactSection({
               Email
             </p>
             <a
-              href="mailto:taraflow@gmail.com"
+              href="mailto:bojantaraflow@gmail.com"
               className="font-semibold text-white hover:underline"
             >
-              taraflow@gmail.com
+              bojantaraflow@gmail.com
             </a>
           </div>
           <div className="flex flex-col items-center text-center">
@@ -50,12 +50,12 @@ export function ContactSection({
               Instagram
             </p>
             <a
-              href="https://instagram.com/taraflow"
+              href="https://instagram.com/_taraflow_"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-white hover:underline"
             >
-              @taraflow
+              @_taraflow_
             </a>
           </div>
         </div>

@@ -235,7 +235,7 @@ export function Navbar({ labels }: { labels: Record<string, string> }) {
           </button>
         </div>
         <p className="absolute bottom-8 text-sm uppercase tracking-widest text-white/40">
-          @taraflow
+          @_taraflow_
         </p>
       </div>
     </>

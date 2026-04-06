@@ -67,10 +67,10 @@ export function Footer({ labels }: { labels: Record<string, string> }) {
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
                 <a
-                  href="mailto:taraflow@gmail.com"
+                  href="mailto:bojantaraflow@gmail.com"
                   className="inline-block transition-all duration-300 hover:translate-x-1 hover:text-white"
                 >
-                  taraflow@gmail.com
+                  bojantaraflow@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -80,12 +80,12 @@ export function Footer({ labels }: { labels: Record<string, string> }) {
               <li className="flex items-center gap-2">
                 <Instagram className="h-4 w-4 shrink-0" />
                 <a
-                  href="https://instagram.com/taraflow"
+                  href="https://instagram.com/_taraflow_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block transition-all duration-300 hover:translate-x-1 hover:text-white"
                 >
-                  @taraflow
+                  @_taraflow_
                 </a>
               </li>
             </ul>

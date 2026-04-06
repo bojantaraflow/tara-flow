@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 export const metadata: Metadata = {
   title: "Kontakt | Tara Flow — Rezervacija",
   description:
-    "Kontaktirajte Tara Flow za rezervaciju ture. Rafting, hiking, jahanje i jeep safari u Foči, BiH. Email: taraflow@gmail.com",
+    "Kontaktirajte Tara Flow za rezervaciju ture. Rafting, hiking, jahanje i jeep safari u Foči, BiH. Email: bojantaraflow@gmail.com",
   keywords: "kontakt Tara Flow, rezervacija rafting, booking avantura Foča",
   openGraph: {
     title: "Kontakt | Tara Flow",
@@ -36,17 +36,17 @@ export default async function ContactPage({
           <p className="mt-2 text-muted-foreground">{t("subtitle")}</p>
 
           <div className="mt-8 space-y-4">
-            <p className="font-medium">taraflow@gmail.com</p>
+            <p className="font-medium">bojantaraflow@gmail.com</p>
             <p className="text-muted-foreground">{t("location")}</p>
             <p className="text-muted-foreground">
               {t("followUs")}:{" "}
               <a
-                href="https://instagram.com/taraflow"
+                href="https://instagram.com/_taraflow_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                @taraflow
+                @_taraflow_
               </a>
             </p>
           </div>
